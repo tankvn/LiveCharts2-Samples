@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfSample.MainWindow"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:local="clr-namespace:WpfSample"
+		xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+		mc:Ignorable="d" Loaded="Window_Loaded"
+		Title="MainWindow" Height="450" Width="800">
+	<Grid>
+		<lvc:CartesianChart Series="{Binding series}">
+			<lvc:CartesianChart.AxisX>
+				<lvc:Axis Title="製品 2023" Labels="Q1, Q2, Q3, A4" />
+			</lvc:CartesianChart.AxisX>
+			<lvc:CartesianChart.AxisY>
+				<lvc:Axis Title="販売" />
+			</lvc:CartesianChart.AxisY>
+		</lvc:CartesianChart>
+	</Grid>
+</Window>
